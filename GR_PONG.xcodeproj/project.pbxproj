@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		79DAF7DD2B3DB0FD0071FF9A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79DAF7DC2B3DB0FD0071FF9A /* main.cpp */; };
+		79DAF7E82B3DDD7B0071FF9A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DAF7E72B3DDD7B0071FF9A /* Cocoa.framework */; };
+		79DAF7EA2B3DDD850071FF9A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DAF7E92B3DDD850071FF9A /* IOKit.framework */; };
+		79DAF7EC2B3DDD8F0071FF9A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DAF7EB2B3DDD8F0071FF9A /* CoreVideo.framework */; };
+		79DAF7EE2B3DDD990071FF9A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DAF7ED2B3DDD990071FF9A /* OpenGL.framework */; };
+		79DAF7F02B3DDDE60071FF9A /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DAF7EF2B3DDDE60071FF9A /* libraylib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +31,11 @@
 		79DAF7D92B3DB0FD0071FF9A /* GR_PONG */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GR_PONG; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DAF7DC2B3DB0FD0071FF9A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		79DAF7E32B3DDA0F0071FF9A /* GR_PONG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GR_PONG.entitlements; sourceTree = "<group>"; };
+		79DAF7E72B3DDD7B0071FF9A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		79DAF7E92B3DDD850071FF9A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		79DAF7EB2B3DDD8F0071FF9A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		79DAF7ED2B3DDD990071FF9A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		79DAF7EF2B3DDDE60071FF9A /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = ../../../../../opt/homebrew/Cellar/raylib/5.0/lib/libraylib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DAF7F02B3DDDE60071FF9A /* libraylib.a in Frameworks */,
+				79DAF7EE2B3DDD990071FF9A /* OpenGL.framework in Frameworks */,
+				79DAF7EC2B3DDD8F0071FF9A /* CoreVideo.framework in Frameworks */,
+				79DAF7EA2B3DDD850071FF9A /* IOKit.framework in Frameworks */,
+				79DAF7E82B3DDD7B0071FF9A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,7 @@
 			children = (
 				79DAF7DB2B3DB0FD0071FF9A /* GR_PONG */,
 				79DAF7DA2B3DB0FD0071FF9A /* Products */,
+				79DAF7E42B3DDD5D0071FF9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +78,18 @@
 				79DAF7DC2B3DB0FD0071FF9A /* main.cpp */,
 			);
 			path = GR_PONG;
+			sourceTree = "<group>";
+		};
+		79DAF7E42B3DDD5D0071FF9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79DAF7EF2B3DDDE60071FF9A /* libraylib.a */,
+				79DAF7ED2B3DDD990071FF9A /* OpenGL.framework */,
+				79DAF7EB2B3DDD8F0071FF9A /* CoreVideo.framework */,
+				79DAF7E92B3DDD850071FF9A /* IOKit.framework */,
+				79DAF7E72B3DDD7B0071FF9A /* Cocoa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +272,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9L94PC6783;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/raylib/5.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "/opt/homebrew/Cellar/raylib/**";
 			};
@@ -256,6 +288,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9L94PC6783;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/raylib/5.0/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "/opt/homebrew/Cellar/raylib/**";
 			};
