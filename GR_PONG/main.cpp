@@ -5,6 +5,9 @@
 //  Created by Guillem Ramisa de Soto on 28/12/23.
 //  Based on https://github.com/educ8s/Raylib-CPP-Starter-Template-for-VSCODE
 //
+// in apple silicon the g++ compilation gets an error on the linking part and on the arm64 compiling
+// used the XCode compilatied file
+//
 // required linked Frameworks/files for compilation
 // - libraylib.a
 // - OpenGL
@@ -250,5 +253,9 @@ int main () {
     
     // close window
     CloseWindow();
+
+    // get sys pat for executable
+    // system("pwd");
+    
     return 0;
 }
