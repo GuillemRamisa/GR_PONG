@@ -13,3 +13,5 @@ Used Xcode 14.3.1 and Raylib 5.0
 
 To use it in mac just double click on the file GR_PONG_game file
 If you want to compile it you'll need to manually link the raylib libs and the apple arm64
+
+![Screengrab](https://github.com/GuillemRamisa/GR_PONG/blob/main/GR_PONG.png)
