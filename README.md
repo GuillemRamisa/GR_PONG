@@ -1,2 +1,15 @@
 # GR_PONG
- PONG GAME IN C++
+## PONG GAME IN C++
+### Based on https://github.com/educ8s/Raylib-CPP-Starter-Template-for-VSCODE
+
+#### Required linked Frameworks/files for compilation
+- libraylib.a
+- OpenGL
+- CoreVideos
+- IOkit
+- Cocoa
+
+Used Xcode 14.3.1 and Raylib 5.0
+
+To use it in mac just double click on the file GR_PONG_game file
+If you want to compile it you'll need to manually link the raylib libs and the apple arm64
