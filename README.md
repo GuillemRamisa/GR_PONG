@@ -1,6 +1,6 @@
 # GR_PONG
 ## PONG GAME IN C++
-### Based on https://github.com/educ8s/Raylib-CPP-Starter-Template-for-VSCODE
+### Based on https://github.com/educ8s/Cpp-Pong-Game-Raylib
 
 #### Required linked Frameworks/files for compilation
 - libraylib.a
