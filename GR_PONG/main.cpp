@@ -3,7 +3,7 @@
 //  GR_PONG
 //
 //  Created by Guillem Ramisa de Soto on 28/12/23.
-//  Based on https://github.com/educ8s/Raylib-CPP-Starter-Template-for-VSCODE
+//  Based on https://github.com/educ8s/Cpp-Pong-Game-Raylib
 //
 // in apple silicon the g++ compilation gets an error on the linking part and on the arm64 compiling
 // used the XCode compilatied file
@@ -18,6 +18,7 @@
 
 #include <iostream>
 #include "raylib.h"
+#include "raymath.h"
 
 using namespace std;
 
