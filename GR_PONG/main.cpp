@@ -20,6 +20,10 @@
 #include "raylib.h"
 #include "raymath.h"
 
+// TO USE RAYGUI THIS LINES HAVE TO BE HERE SO RAYLIB KNOWS TO USE IT INSTEAD OF OPENGL
+#define RAYGUI_IMPLEMENTATION
+#include "raygui.h"
+
 using namespace std;
 
 // define global variables for score tracking
@@ -157,7 +161,6 @@ Paddle player_1;
 CPUPaddle player_2;
 
 
-
 int main () {
     
     // Game globals
@@ -189,13 +192,25 @@ int main () {
     player_2.Paddle_height  = 120;
     player_2.Paddle_speed   = 8;
     
-    
+    float value = 0.5f;
     
     // Game loop where all the checks and events happen
     // While statement to define the close state while is not closed, run -->
     // function WindowShouldClose() operates with an Escape key or Close button on window
     while (WindowShouldClose() == false) {
         BeginDrawing();
+  
+        
+        // -------------------------- RAYGUI FUNCTIONALITIES ADDED
+         
+        // GuiSetStyle(BUTTON, TEXT_ALIGNMENT, TEXT_ALIGN_CENTER);
+        // GuiButton((Rectangle){15,255,125,30}, GuiIconText(149, "Hello"));
+        // GuiMessageBox((Rectangle){20,555,325,160}, "My mesahe", "nome yores tu le diste", "exit");
+        // GuiGroupBox((Rectangle){ 66, 24, 276, 312 }, "STANDARD");
+        // GuiSlider((Rectangle){ 96, 48, 216, 16 }, TextFormat("%0.2f", value), NULL, &value, 0.0f, 1.0f);
+        
+        // -------------------------- -------------------------- -------------------------- --------------------------
+        
         
         // Updating elements
         // This needs to be called before the draw to start the update
